@@ -1,0 +1,101 @@
+:root {
+    --primary-red: #C41230;
+    --link-blue: #2E74B5;
+    --text-gray: #666;
+    --light-gray: #f5f5f5;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: var(--text-gray);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.breadcrumb {
+    color: var(--text-gray);
+    font-size: 0.9em;
+    margin: 20px 0;
+}
+
+/* New/Updated Header Styles */
+h1 {
+    background-color: var(--primary-red);
+    color: white;
+    margin: 0 -20px 30px -20px;  /* Negative margin to extend beyond container */
+    padding: 30px 20px;
+    font-size: 2.5em;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(to right, var(--primary-red), var(--link-blue));
+}
+
+.minimag-entry {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: var(--light-gray);
+    border-radius: 8px;
+}
+
+.minimag-title {
+    color: var(--link-blue);
+    text-decoration: none;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.minimag-meta {
+    font-size: 0.9em;
+    color: var(--text-gray);
+    margin-bottom: 10px;
+}
+
+.download-button {
+    display: inline-block;
+    background-color: var(--primary-red);
+    color: white;
+    padding: 8px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin: 10px 0;
+    transition: background-color 0.2s ease;
+}
+
+.download-button:hover {
+    background-color: darken(#C41230, 10%);
+}
+
+.register-button {
+    display: inline-block;
+    background-color: var(--link-blue);
+    color: white;
+    padding: 8px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin: 10px 0;
+    transition: background-color 0.2s ease;
+}
+
+.register-button:hover {
+    background-color: darken(#2E74B5, 10%);
+}
+
+.register-text {
+    margin: 15px 0;
+}

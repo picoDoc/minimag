@@ -1,0 +1,4 @@
+title: MiniMag
+baseurl: ""
+url: ""
+permalink: /:year/:month/:day/:title

@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<div class="breadcrumb">
+    CEF SPECIALISED BOOK MINISTRY > MINIMAG
+</div>
+
+<h1>MiniMag</h1>
+
+{% for post in site.posts %}
+<div class="minimag-entry">
+    <h2 class="minimag-title">{{ post.title }}</h2>
+    <div class="minimag-meta">
+        Posted on {{ post.date | date: "%d/%m/%Y" }} by {{ post.author }}
+    </div>
+    <p>{{ post.content }}</p>
+    <a href="{{ site.baseurl }}/downloads/{{ post.download_file }}" class="download-button">Download</a>
+    <p class="register-text">Register to receive the MiniMag in your inbox free every month.</p>
+    <a href="#" class="register-button">Register ▶</a>
+</div>
+{% endfor %}
