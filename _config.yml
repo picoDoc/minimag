@@ -1,4 +1,4 @@
 title: MiniMag
-baseurl: ""
+baseurl: "minimag"
 url: ""
 permalink: /:year/:month/:day/:title
